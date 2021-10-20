@@ -17,14 +17,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css" />    
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
     <header class="header">
         <div class="container header-container">
-            <a href="" class="link link-no-tdn header-logo">Web<span class="header-post-logo">Studio</span>
-            </a>
+            <div class="header-logo-wrapper">
+                <a href="#" class="link link-no-tdn logo"><span class="front-logo">Web</span><span class="header-back-logo">Studio</span>
+                </a>
+            </div>
             <nav class="navigation-header">
                 <ul class="list list-no-ls list-header-navigation">
                     <li class="header-nav-item item">
@@ -60,12 +63,12 @@
         <section class="hero section">
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <input type="button" value="Заказать услугу" class="hero-button button" data-modal-open />
+                <input type="button" value="Заказать услугу" class="button-submit button-text" data-modal-open />
             </div>
         </section>
         <section class="superiority section">
             <div class="container">
-                <h2 hidden>Наши достоинства</h2>
+                <h2 class="visually-hidden">Наши достоинства</h2>
                 <ul class="superiority-list list-no-ls">
                     <li class="superiority-item item">
                         <div class="superiority-img-block">
@@ -120,7 +123,7 @@
         </section>
         <section class="scills-section section">
             <div class="container scills-container">
-                <h2 class="scills-title">Чем мы занимаемся</h2>
+                <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="scills-list list-no-ls">
                     <li class="scills-item item">
                         <div class="scills-content">
@@ -155,7 +158,7 @@
         </section>
         <section class="team-section section">
             <div class="container team-container">
-                <h2 class="team-title">Наша команда</h2>
+                <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list-no-ls">
                     <li class="team-items item">
                         <img src="./images/productdesigner.jpg" alt="Product Designer" width="270" height="260" />
@@ -312,7 +315,7 @@
         </section>
         <section class="section regcustomers-section">
             <div class="container regcustomers-container">
-                <h2 class="regcustomers-title">Постоянные клиенты</h2>
+                <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="regcustomers-list list-no-ls list">
                     <li class="regcustomers-item item">
                         <a href="" class="regcustomers-link link-no-std">
@@ -363,8 +366,8 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-adress footer-content">
-                <div class="footer-logo-container">
-                    <a href="" class="link link-no-tdn footer-logo">Web<span class="footer-post-logo">Studio</span>
+                <div class="footer-logo-wrapper">
+                    <a href="#" class="link link-no-tdn logo"><span class="front-logo">Web</span><span class="footer-back-logo">Studio</span>
                     </a>
                 </div>
                 <address class="address">
@@ -422,8 +425,8 @@
                     <div class="footer-subscribing-wrapper">
                         <input type="email" id="footer-subscribing-email-input" name="subscribing-email"
                             placeholder="E-mail" class="footer-subscribing-input">
-                        <button type="submit" class="footer-subscribing-button"> Подписаться
-                            <svg class="subscribe-icon">
+                        <button type="submit" class="button-submit button-text-img"> Подписаться
+                            <svg class="button-submit-icon">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
@@ -490,7 +493,7 @@
                         </span>
                     </label>
                 </div>
-                <button type="submit" class="backdrop-submit-button"> Отправить </button>
+                <button type="submit" class="button-submit button-submit-shadow"> Отправить </button>
             </form>
         </div>
     </div>

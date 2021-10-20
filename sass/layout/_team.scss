@@ -1,0 +1,38 @@
+
+.team-section {
+    background-color: var(--body-additional-color);
+  }
+  
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: var(--horisondal-content-offset-negative);
+  }
+  .team-items {
+    margin-top: var(--vertical-content-offset-positive);
+    margin-left: var(--horisondal-content-offset-positive);
+    background-color: var(--cards-background-color);
+    flex-basis: calc(100% / 4 - var(--horisondal-content-offset-positive));
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .team-fig-caption {
+    margin-top: var(--vertical-content-offset-positive);
+    margin-bottom: var(--vertical-content-offset-positive);
+  }
+  .team-member-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  .team-member-positions {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--general-text-fonts-color);
+    margin-bottom: 16px;
+  }

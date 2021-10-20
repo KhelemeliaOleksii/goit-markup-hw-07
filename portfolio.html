@@ -12,41 +12,56 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <!--Link style-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        <link rel="stylesheet" href="./css/main.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <header class="header">
             <div class="container header-container">
-                    <a href="" class="link link-no-tdn header-logo">Web<span class="header-post-logo">Studio</span> </a>
-                    <nav class="navigation-header">
-                        <ul class="list list-no-ls list-header-navigation " > 
-                            <li class="header-nav-item item"><a href="./index.html" class="link link-no-tdn header-nav-link ">Студия</a></li>
-                            <li class="header-nav-item item"><a href="./portfolio.html" class="link link-no-tdn header-nav-link current-page-link  ">Портфолио</a></li>    
-                            <li class="header-nav-item item"><a href="" class="link link-no-tdn header-nav-link ">Контакты</a></li>
-                        </ul>    
-                    </nav>
-                    <ul class="list list-no-ls list-header-contact" >
-                        <li class="header-contact-item item mail-item"><a href="mailto:info@devstudio.com" class="link link-no-tdn header-contact-link">
-                            <svg width="16" height="12" class="contact-icon"> 
-                                <use href="../images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            <span class="mail-header">info@devstudio.com</span></a></li>
-                        <li class="header-contact-item"><a href="tel:+380961111111" class="link link-no-tdn header-contact-link">
-                            <svg width="10" height="16" class="contact-icon"> 
-                                <use href="../images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            <span>+38 096 111 11 11</span></a></li>
+                <div class="header-logo-wrapper">
+                    <a href="#" class="link link-no-tdn logo"><span class="front-logo">Web</span><span class="header-back-logo">Studio</span>
+                    </a>
+                </div>
+                <nav class="navigation-header">
+                    <ul class="list list-no-ls list-header-navigation">
+                        <li class="header-nav-item item">
+                            <a href="./index.html" class="link link-no-tdn header-nav-link ">Студия</a>
+                        </li>
+                        <li class="header-nav-item item">
+                            <a href="./portfolio.html" class="link link-no-tdn header-nav-link current-page-link">Портфолио</a>
+                        </li>
+                        <li class="header-nav-item item">
+                            <a href="" class="link link-no-tdn header-nav-link">Контакты</a>
+                        </li>
                     </ul>
+                </nav>
+                <ul class="list list-no-ls list-header-contact">
+                    <li class="header-contact-item item mail-item">
+                        <a href="mailto:info@devstudio.com" class="link link-no-tdn header-contact-link">
+                            <svg width="16" height="12" class="contact-icon">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            <span class="mail-header">info@devstudio.com</span></a>
+                    </li>
+                    <li class="header-contact-item">
+                        <a href="tel:+380961111111" class="link link-no-tdn header-contact-link">
+                            <svg width="10" height="16" class="contact-icon">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span></a>
+                    </li>
+                </ul>
             </div>
         </header>
+    
         <section class="products-section section">
             <div class="container">
-                <ul class="products-list list-no-ls">
-                    <li class="product-list-item item"><input type="button" value="Все" class="product-list-btn button"></li>
-                    <li class="product-list-item item"><input type="button" value="Веб-сайты" class="product-list-btn button"></li>
-                    <li class="product-list-item item"><input type="button" value="Приложения" class="product-list-btn button"></li>
-                    <li class="product-list-item item"><input type="button" value="Дизайн" class="product-list-btn button"></li>
-                    <li class="product-list-item item"><input type="button" value="Маркетинг" class="product-list-btn button"></li>
+                <ul class="product-buttom-list list-no-ls">
+                    <li class="product-buttom-item item"><input type="button" value="Все" class="product-btn button"></li>
+                    <li class="product-buttom-item item"><input type="button" value="Веб-сайты" class="product-btn button"></li>
+                    <li class="product-buttom-item item"><input type="button" value="Приложения" class="product-btn button"></li>
+                    <li class="product-buttom-item item"><input type="button" value="Дизайн" class="product-btn button"></li>
+                    <li class="product-buttom-item item"><input type="button" value="Маркетинг" class="product-btn button"></li>
                 </ul>
                 <ul class="products-example-list list-no-ls">
                     <li class="products-example-item ">
@@ -181,8 +196,8 @@
         <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-adress footer-content">
-                    <div class="footer-logo-container">
-                        <a href="" class="link link-no-tdn footer-logo">Web<span class="footer-post-logo">Studio</span>
+                    <div class="footer-logo-wrapper">
+                        <a href="#" class="link link-no-tdn logo"><span class="front-logo">Web</span><span class="footer-back-logo">Studio</span>
                         </a>
                     </div>
                     <address class="address">
@@ -240,8 +255,8 @@
                         <div class="footer-subscribing-wrapper">
                             <input type="email" id="footer-subscribing-email-input" name="subscribing-email"
                                 placeholder="E-mail" class="footer-subscribing-input">
-                            <button type="submit" class="footer-subscribing-button"> Подписаться
-                                <svg class="subscribe-icon">
+                            <button type="submit" class="button-submit button-text-img"> Подписаться
+                                <svg class="button-submit-icon">
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
@@ -249,6 +264,6 @@
                     </form>
                 </div>
             </div>
-        </footer>   
-    </body>
+        </footer>
+        </body>
 </html>
