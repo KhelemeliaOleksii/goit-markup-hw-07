@@ -5,9 +5,10 @@
   .social-item {
     height: 44px;
     width: 44px;
-  }
-  .social-item + .social-item {
-    margin-left: 10px;
+    .social-item + & {
+      margin-left: 10px;
+    }
+    
   }
   .social-link {
     height: 100%;
@@ -23,15 +24,15 @@
   .social-link:focus {
     background-color: var(--active-btn-background-color);
   }
-  .social-link:hover .social-icon,
-  .social-link:focus .social-icon {
-    fill: var(--body-fonts-onbackgraund-color);
-  }
-  .social-icon {
+   .social-icon {
     fill: var(--main-svg-color);
     width: 20px;
     height: 20px;
     transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+    .social-link:hover &,
+    .social-link:focus & {
+      fill: var(--body-fonts-onbackgraund-color);
+    }
   }
   .social-link-footer {
     background-color: rgba(255, 255, 255, 0.1);

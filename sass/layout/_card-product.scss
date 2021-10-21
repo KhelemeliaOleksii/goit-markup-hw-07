@@ -14,23 +14,18 @@
   .products-example-link {
     display: block;
     transition: box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    }
   }
-  .products-example-link:focus,
-  .products-example-link:hover {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-      0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  }
+  
   .products-example-content {
     position: relative;
-  }
-  .products-example-link:hover .product-description-content,
-  .products-example-link:focus .product-description-content {
-    position: absolute;
-    transform: translateY(0);
-  }
-  .products-example-content {
     overflow: hidden;
   }
+ 
   .product-description-content {
     position: absolute;
     display: flex;
@@ -54,6 +49,12 @@
     color: var(--body-fonts-onbackgraund-color);
     transform: translateY(100%);
     transition: transform var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+    .products-example-link:hover &,
+    .products-example-link:focus & {
+      position: absolute;
+      transform: translateY(0);
+    }
+   
   }
   .product-name-container {
     padding-top: 20px;

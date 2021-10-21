@@ -128,16 +128,15 @@ body {
   border: none;
 }
 
+.button-submit:hover, .button-submit:active {
+  box-shadow: none;
+}
+
 .button-submit-icon {
   width: 24px;
   height: 24px;
   margin-right: 10px;
   margin-left: 10px;
-}
-
-.button-submit:hover,
-.button-submit:active {
-  box-shadow: none;
 }
 
 .button-submit-shadow {
@@ -189,16 +188,16 @@ body {
   background-color: var(--active-btn-background-color);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--body-fonts-onbackgraund-color);
-}
-
 .social-icon {
   fill: var(--main-svg-color);
   width: 20px;
   height: 20px;
   transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--body-fonts-onbackgraund-color);
 }
 
 .social-link-footer {
@@ -233,9 +232,9 @@ body {
   transition: opacity var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
-  visibility: hidden;
+.backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -320,8 +319,7 @@ body {
   transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus,
-.form-input:hover {
+.form-input:focus, .form-input:hover {
   cursor: pointer;
   border-color: var(--active-link-fonts-color);
 }
@@ -329,11 +327,6 @@ body {
 .data-input {
   height: 40px;
   padding-left: 42px;
-}
-
-.form-input:focus + .input-icon,
-.form-input:hover + .input-icon {
-  fill: var(--active-link-fonts-color);
 }
 
 .input-icon {
@@ -345,6 +338,11 @@ body {
   transform: translateY(-50%);
   fill: var(--body-fonts-main-color);
   transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .input-icon,
+.form-input:hover + .input-icon {
+  fill: var(--active-link-fonts-color);
 }
 
 .msg-input {
@@ -370,8 +368,7 @@ body {
   margin: 0 13px 30px 13px;
 }
 
-.modal-checkbox-comment,
-.input-checkbox {
+.modal-checkbox-comment {
   font-size: 14px;
   font-weight: 400;
   line-height: calc(18 / 14);
@@ -382,6 +379,14 @@ body {
 .modal-checkbox-comment a {
   color: var(--active-link-fonts-color);
   text-decoration-skip-ink: none;
+}
+
+.input-checkbox {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(18 / 14);
+  text-align: left;
+  letter-spacing: 0.03em;
 }
 
 .custom-checkbox-box {
@@ -428,7 +433,7 @@ body {
   flex-grow: 1;
 }
 
-.list-header-navigation {
+.header-navigation-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -446,10 +451,13 @@ body {
   color: inherit;
 }
 
+.header-nav-link:hover, .header-nav-link:focus {
+  color: var(--active-link-fonts-color);
+}
+
 .current-page-link {
   position: relative;
   color: var(--active-link-fonts-color);
-  /* background-color: var(--active-link-fonts-color); */
 }
 
 .current-page-link::after {
@@ -462,12 +470,7 @@ body {
   top: 44px;
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: var(--active-link-fonts-color);
-}
-
-.list-header-contact {
+.header-contact-list {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -481,9 +484,6 @@ body {
 .header-contact-link {
   display: flex;
   align-items: center;
-}
-
-.header-contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -491,18 +491,17 @@ body {
   color: var(--general-text-fonts-color);
 }
 
-.header-contact-link:hover,
-.header-contact-link:focus {
+.header-contact-link:hover, .header-contact-link:focus {
   color: var(--active-link-fonts-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
 }
 
 .header-contact-link:hover .contact-icon,
 .header-contact-link:focus .contact-icon {
   --color1: var(--active-link-fonts-color);
-}
-
-.contact-icon {
-  margin-right: 10px;
 }
 
 .hero {
@@ -682,16 +681,16 @@ body {
   transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.regcustomers-link:hover,
+.regcustomers-link:focus {
+  border-color: var(--active-link-fonts-color);
+}
+
 .regcustomers-icon {
   width: 100%;
   height: 100%;
   fill: #afb1b8;
   transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.regcustomers-link:hover,
-.regcustomers-link:focus {
-  border-color: var(--active-link-fonts-color);
 }
 
 .regcustomers-link:hover .regcustomers-icon,
@@ -707,7 +706,6 @@ body {
 
 .footer-container {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -724,8 +722,7 @@ body {
   color: var(--body-fonts-onbackgraund-color);
 }
 
-.address-link:hover,
-.address-link:focus {
+.address-link:hover, .address-link:focus {
   color: var(--active-link-fonts-color);
 }
 
@@ -741,8 +738,7 @@ body {
   margin-right: 93px;
 }
 
-.footer-social-title,
-.footer-subscribing-label {
+.footer-social-title {
   text-transform: uppercase;
   color: var(--body-fonts-onbackgraund-color);
   font-weight: 700;
@@ -756,6 +752,14 @@ body {
 .footer-subscribing-label {
   display: block;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--body-fonts-onbackgraund-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 .footer-subscribing {
@@ -813,8 +817,7 @@ body {
   padding: 6px 22px;
 }
 
-.product-btn:hover,
-.product-btn:focus {
+.product-btn:hover, .product-btn:focus {
   color: var(--active-btn-fonts-color);
   background-color: var(--active-btn-background-color);
   box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12), 0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
@@ -839,22 +842,12 @@ body {
   transition: box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.products-example-link:focus,
-.products-example-link:hover {
+.products-example-link:focus, .products-example-link:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .products-example-content {
   position: relative;
-}
-
-.products-example-link:hover .product-description-content,
-.products-example-link:focus .product-description-content {
-  position: absolute;
-  transform: translateY(0);
-}
-
-.products-example-content {
   overflow: hidden;
 }
 
@@ -877,6 +870,12 @@ body {
   color: var(--body-fonts-onbackgraund-color);
   transform: translateY(100%);
   transition: transform var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products-example-link:hover .product-description-content,
+.products-example-link:focus .product-description-content {
+  position: absolute;
+  transform: translateY(0);
 }
 
 .product-name-container {
