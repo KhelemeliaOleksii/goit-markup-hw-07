@@ -1,4 +1,13 @@
 .section {
-    padding-top: var(--vertical-section-offset-positive);
-    padding-bottom: var(--vertical-section-offset-positive);
-  }
+  padding-top: var(--vertical-section-offset-positive);
+  padding-bottom: var(--vertical-section-offset-positive);
+}
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
