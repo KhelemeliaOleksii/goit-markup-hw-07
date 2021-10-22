@@ -3,11 +3,8 @@
   padding-bottom: var(--vertical-section-offset-positive);
 }
 .section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  @include font-config(700, 36px, calc(42 / 36), 0.03em, var(--body-fonts-main-color));
   text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
   vertical-align: top;
+  margin-bottom: 20px;
 }

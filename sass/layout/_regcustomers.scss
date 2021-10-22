@@ -1,7 +1,12 @@
 .regcustomers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: var(--horisondal-content-offset-negative);
 }
 .regcustomers__item {
@@ -11,13 +16,21 @@
   margin-top: var(--vertical-content-offset-positive);
 }
 .regcustomers__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid var(--main-svg-color);
   padding: 15px 31px;
+  -webkit-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -28,6 +41,8 @@
   width: 100%;
   height: 100%;
   fill: #afb1b8;
+  -webkit-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
   .regcustomers__link:hover &,
   .regcustomers__link:focus & {
